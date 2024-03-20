@@ -1,8 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
+  color: #2e2f42;
   background-color: #ffffff;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 ul,
@@ -16,11 +17,14 @@ a {
 .logo {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #2e2f42;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.logo-white {
+  color: #f4f4fd;
 }
 
 .logo-blue {
@@ -30,7 +34,6 @@ a {
 .header-nav-item {
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.02em;
 }
 
 .header-nav-link {
@@ -44,12 +47,6 @@ a {
 .header-nav-link:active {
   text-decoration: underline;
   color: #404bbf;
-}
-
-.header-address-item {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.02em;
 }
 
 .header-address-link {
@@ -68,7 +65,6 @@ a {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
@@ -87,4 +83,68 @@ a {
 
 .footer {
   background-color: #2e2f42;
+}
+.features-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.features-item-text {
+  color: #434455;
+}
+
+.features-title {
+  display: none;
+}
+
+.team {
+  background-color: #f4f4fd;
+  text-align: center;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.team-item {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
+}
+
+.team-item-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-item-position {
+  color: #434455;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.portfolio-item {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
+}
+
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.portfolio-item-text {
+  color: #434455;
+}
+
+.footer-copy {
+  color: #f4f4fd;
 }
