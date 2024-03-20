@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: #434455;
   background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -21,14 +21,15 @@ a {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  color: #4d5ae5;
 }
 
 .logo-white {
   color: #f4f4fd;
 }
 
-.logo-blue {
-  color: #4d5ae5;
+.logo-black {
+  color: #2e2f42;
 }
 
 .header-nav-item {
@@ -49,12 +50,16 @@ a {
   color: #404bbf;
 }
 
-.header-address-link {
-  color: #434455;
+.header-address {
   font-style: normal;
 }
 
-.header-address-link:hover {
+.header-address-link {
+  color: #434455;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
   color: #404bbf;
 }
 
@@ -66,6 +71,7 @@ a {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
   color: #fff;
 }
 .hero-button {
@@ -73,12 +79,12 @@ a {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
   background-color: #4d5ae5;
   cursor: pointer;
 }
-.hero-button:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 
@@ -95,7 +101,7 @@ a {
 }
 
 .features-title {
-  display: none;
+  letter-spacing: 0.02em;
 }
 
 .team {
@@ -107,10 +113,10 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .team-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
 }
 
@@ -118,6 +124,7 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team-item-position {
@@ -129,11 +136,10 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .portfolio-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
 }
 
@@ -141,6 +147,7 @@ a {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .portfolio-item-text {
   color: #434455;
