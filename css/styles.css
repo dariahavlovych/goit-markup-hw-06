@@ -108,7 +108,7 @@ a {
 
 .header-nav-list,
 .header-address-list {
-  /* padding: 24px 0; виношу зі списка в айтем*/
+  padding: 24px 0;
   display: flex;
   gap: 40px;
 }
