@@ -108,7 +108,7 @@ a {
 
 .header-nav-list,
 .header-address-list {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   display: flex;
   gap: 40px;
 }
@@ -117,11 +117,11 @@ a {
   width: calc((100% - 80px) / 3);
   font-weight: 500;
   font-size: 16px;
-  padding: 24px 0;
 }
 
 .header-nav-link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .header-nav-link:hover,
