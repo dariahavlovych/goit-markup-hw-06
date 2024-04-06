@@ -1,13 +1,3 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
-/* TODO
-1. Add thumb for images
-4. button */
-
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -119,6 +109,24 @@ a {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition: color 250ms ease-in-out;
+}
+
+.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.header-nav-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .header-nav-link:hover,
@@ -126,10 +134,10 @@ a {
   color: #404bbf;
 }
 
-.header-nav-link:active {
+/* .header-nav-link:active {
   text-decoration: underline;
   color: #404bbf;
-}
+} */
 
 .header-address {
   font-style: normal;
@@ -144,6 +152,7 @@ a {
   color: #434455;
   padding: 24px 0;
   display: block;
+  transition: color 250ms ease-in-out;
 }
 
 .header-address-link:hover,
@@ -156,6 +165,15 @@ a {
 /* Section Hero */
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -187,6 +205,7 @@ a {
   border: 0;
   min-width: 169px;
   /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+  transition: background-color 250ms ease-in-out;
 }
 
 .hero-button:hover,
@@ -203,6 +222,14 @@ a {
 
 .features-item {
   width: calc((100% - 72px) / 4);
+}
+
+.features-logo {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .features-item-title {
@@ -244,13 +271,12 @@ a {
   background-color: #fff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
-  /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 .team-item-name {
@@ -264,6 +290,40 @@ a {
 
 .team-item-position {
   color: #434455;
+  margin-bottom: 8px;
+}
+
+.social-links-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-item {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-icon {
+  fill: #f4f4fd;
+}
+
+.social-link {
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  transition: background-color 250ms ease-in-out;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  background-color: #404bbf;
 }
 
 /* Section Portfolio */
@@ -289,6 +349,31 @@ a {
 .portfolio-item {
   background-color: #fff;
   width: calc((100% - 48px) / 3);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  padding: 40px 32px;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay p {
+  color: #f4f4fd;
 }
 
 .portfolio-card {
@@ -318,13 +403,39 @@ a {
   padding-top: 100px;
 }
 
+.footer-flex {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
 .footer-copy {
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.social-links.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .logo.foot {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 0;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.foot.social-link:hover,
+.foot.social-link:focus,
+.foot.social-link:active {
+  background-color: #31d0aa;
 }
