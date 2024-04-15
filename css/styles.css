@@ -434,15 +434,14 @@ input {
 }
 
 .social-links.foot {
-  display: flex;
-  flex-direction: column;
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .logo.foot {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 0;
+  padding: 0;
 }
 
 .footer-subtitle {
@@ -499,7 +498,6 @@ input {
 .footer-button {
   font-family: "Roboto", sans-serif;
   display: flex;
-  gap: 16px;
   align-items: center;
   justify-content: center;
   min-width: 165px;
@@ -599,7 +597,6 @@ input {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 
 .modal-field {
